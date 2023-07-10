@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Document</title>
 </head>
 <style>
@@ -68,7 +71,11 @@
     }
     .navbar ul li a:hover {
       background-color: rgba(59, 59, 90, 0.76);
-      position:relative ;
+      position:relative;
+       border-radius: 5px;
+       background:red;
+       width: 50px;
+       height: 20px;
     }
      .Box {
     position:absolute;
@@ -80,12 +87,11 @@
     border-radius:1;
     margin: 10px;
     margin-top: 10%;
-    
   }
   .Box .content {
      width: 150px;
      padding: 0;
-     justify-content: ;
+     justify-content: center ;
      align-items: center;
   }
   .content h1 {
@@ -95,23 +101,75 @@
       font-weight: 700;
       left: 17%;
       padding: 0% 15%;
-      margin-top:10%;
       letter-spacing: 0;
       line-height:84px ;
       font-family: 'Open Sans', sans-serif;
+      top: 30%;
     }
+    .Box img {
+        width: 70px;
+        height: 20;
+        margin: 5px;
+       margin-left: 350%;
+       margin-bottom: 2%;
+       border-color: #5454D4;
+       background:transparent;
+    }
+    
     .content p {
      width: 450px;
     font-size: 17px;
-    color: rgb(251, 251, 251);
+    color: rgba(251, 251, 251, 0.481);
     text-transform: lowercase;
-    margin-top: 10%;
+    margin-top: 2px;
     display: block;
     line-height: 20px;
     text-align: justify;
     margin-left: 15%;
     padding: 0px 5%;
-    font-family: 'Nunito Sans', sans-serif; 
+    font-family:  sans-serif; 
+  }
+  .fa-container {
+  position: absolute;
+}
+  .fa:nth-child(1) {
+    position: absolute;
+   width: 20px;
+   height: 20px;
+   border: 2px solid #faf9f9;
+   border-radius: 60px;
+   margin-left: 240%;
+   margin-top: 10px;
+   transform: rotate(5deg);
+}
+.fa:nth-child(2) {
+  position: absolute;
+   width: 20px;
+   height: 20px;
+   border: 2px solid #f2eded4d;
+   border-radius: 60px;
+   transform: rotate(5deg);
+   margin-left: 240%;
+}
+  .rounded-Box1 {
+    position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  transform: rotate(16deg);
+  margin-left: 150%;
+  top: 40px;
+  }
+  .rounded-Box2 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 2px solid #fbf8f8;
+  border-radius: 30px;
+  transform: rotate(17deg);
+  margin-left: 160.5%;
+  top: 90px;
   }
   .Box2{
     position: absolute;
@@ -143,9 +201,59 @@
     padding: 0px 5%;
     font-family: 'Nunito Sans'; 
   }
-
-
+  .material-symbols-outlined-container {
+  width: 70px;
+  height: 30px;
+  background-color: transparent;
+  color: white;
+  }
+ 
+  .Box .content1 {
+     width: 150px;
+    
+     padding: 0;
+     justify-content: center ;
+     align-items: center;
+  }
+  .content1 h1{
+      width: 350px;
+      color: rgb(255, 253, 253);
+      font-size: 30px;
+      font-weight: 700;
+      margin-left: 10%;
+      padding: 0% 15%;
+      font-family: 'Open Sans', sans-serif;
+     margin-top: 40%;
+  }
+  .content1 p{
+    position: absolute;
+    width: 480px;
+    font-size: 13px;
+    color: rgba(251, 251, 251, 0.481);
+    text-transform: lowercase;
+    line-height: 20px;
+    text-align: justify;
+    margin-left: 150%;
+    font-family:  sans-serif; 
+  }
+  .Box4 {
+    position:relative;
+    width: 700px;
+    height: 45vh;
+    background: transparent;
+    box-sizing: none;
+    border-radius:1;
+    margin: 10px;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  .Box4 img{
+    width: 950px;
+    margin-left: 0;
+}
+  
 </style>
+
 <body>
     <div class="container">
          <div class="row">
@@ -160,21 +268,39 @@
              </nav>
               <div class="Box">
                 <div class="content">
+                  <div class="fa fa-circle-thin-container"></div>
+                  <i class="fa fa-circle-thin 1"></i>
+                  <i class="fa fa-circle-thin 2"></i>
+                  <div class="rounded-Box1"></div>
+                  <div class="rounded-Box2"></div>
                     <h1>BuildYour
                         <br>
                         Awesome
                         <br>
                         Platform
-                    </h1>
-                    <p>Enver studio is a digital studio that offers several services 
+                    </h1> 
+                     <p>Enver studio is a digital studio that offers several services 
                       such as UI/UX Design to developers,we will provide the best service 
                       for those of you who use our services.
-                    </p>
+                     </p>
+                      <div class="material-symbols-outlined-container">
+                        <i class="material-symbols-outlined"></i>
+                      </div>
                 </div>
                 <div class="Box2">
                   <div class="content">
                     <p>our service</p>
-                  </div>
+                  </div>   
+                </div>
+                <div class="Box3">
+                  <div class="content1">
+                    <p>Watch this one minute video so you understand why you should<br>
+                        use our services!</p>
+                    <h1>why Enver Is The <br>Best Choice?</h1>
+                 </div>
+                </div>
+                <div class="Box4">
+                  <img src="image/Group_162500.png">
                 </div>
               </div>
 </body>
