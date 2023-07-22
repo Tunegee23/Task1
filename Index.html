@@ -68,14 +68,40 @@
       float: left;
       display: inline-flex;
     }
-    .navbar ul li a:hover {
-      background-color: rgba(59, 59, 90, 0.76);
-      position:relative;
-       border-radius: 5px;
-       background:red;
-       width: 50px;
-       height: 20px;
+   .navbar ul li a.active {
+  background-color:transparent;
+  color: #5454D4; 
+}
+    
+   .Box1{
+    position:absolute;
+    width: 110px;
+    height: 30px;
+    background:transparent;
+    box-sizing: none;
+    border:1px solid white;
+    margin: 10px;
+    top: 40px;
+    margin-left: 55%;
+   
     }
+    .Box1 .content{
+      width: 150px;
+     padding: 0;
+    }
+    .Box1 .content p{
+    position: absolute;
+    width: 150px;
+    font-size: 15px;
+    color: rgb(251, 248, 248);
+    text-transform: lowercase;
+    top: px;
+    bottom: 10%;
+    left: 0;
+    display: flex;
+    line-height: 27px;
+    font-family: 'Nunito Sans'; 
+  }
      .Box {
     position:absolute;
     width: 400px;
@@ -86,6 +112,8 @@
     border-radius:1;
     margin: 10px;
     margin-top: 2%;
+    top: 80px;
+    bottom: 10px;
   }
   .Box .content {
      width: 150px;
@@ -107,12 +135,8 @@
     }
     .Box img {
         width: 70px;
-        height: 20;
         margin: 5px;
-       margin-left: 350%;
-       margin-bottom: 2%;
-       border-color: #5454D4;
-       background:transparent;
+       margin-left: 120%;
     }
     
     .content p {
@@ -125,18 +149,8 @@
     line-height: 20px;
     text-align: justify;
     margin-left: 15%;
-    padding: 0px 5%;
     font-family:  sans-serif; 
-  }
-.fa:nth-child(2) {
-  position: absolute;
-   width: 20px;
-   height: 20px;
-   border: 2px solid #f2eded4d;
-   border-radius: 60px;
-   transform: rotate(5deg);
-   margin-left: 240%;
-}
+    }
   .rounded-Box1 {
     position: absolute;
   width: 250px;
@@ -144,7 +158,7 @@
   border: 2px solid #ffffff;
   border-radius: 30px;
   transform: rotate(16deg);
-  margin-left: 150%;
+  margin-left: 170%;
   top: 40px;
   }
   .rounded-Box2 {
@@ -154,9 +168,21 @@
   border: 2px solid #fbf8f8;
   border-radius: 30px;
   transform: rotate(17deg);
-  margin-left: 160.5%;
-  top: 90px;
+  margin-left: 180.5%;
+  top: 50px;
+  bottom: 0;
+  background: linear-gradient(0deg, #5454D4, #5454D4),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
   }
+ .rounded-Box2 img{
+   width: 250px;
+  height: 250px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+ margin-left: 0%;
+ margin-top: 0;
+ transform: rotate(350deg);
+   }
   .Box2{
     position: absolute;
     width: 110px;
@@ -168,6 +194,14 @@
     box-sizing: none;
     margin: 10px;
     margin-top: 5%;
+    top: 125%;
+    bottom: 10px;
+  }
+  .Box2 img{
+    width: 70px;
+    margin: 10px;
+   margin-left: 950px;
+   transform: rotate(20deg);
   }
   .Box2 .content {
     width: 150px;
@@ -175,11 +209,12 @@
     align-items: center;
   }
   .Box2 p{
+    position: absolute;
     width: 150px;
     font-size: 15px;
     color: rgb(251, 251, 251);
     text-transform: lowercase;
-    margin-top:2px;
+    bottom: 10%;
     display: block;
     line-height: 27px;
     text-align: left;
@@ -187,13 +222,13 @@
     padding: 0px 5%;
     font-family: 'Nunito Sans'; 
   }
-  .Box .content1 {
+  .Box3 .content1 {
      width: 150px;
      padding: 0;
      justify-content: center ;
      align-items: center;
   }
-  .content1 h1{
+  .Box3 .content1 h1{
       width: 350px;
       color: rgb(255, 253, 253);
       font-size: 30px;
@@ -201,9 +236,9 @@
       margin-left: 10%;
       padding: 0% 15%;
       font-family: 'Open Sans', sans-serif;
-     margin-top: 40%;
+     margin-top: 60%;
   }
-  .content1 p{
+  .Box3 .content1 p{
     position: absolute;
     width: 480px;
     font-size: 13px;
@@ -255,7 +290,7 @@
   position:absolute;
     width: 50px;
     height:60px;
-    background: #5454d45c;
+    background: #5454d452;
     box-sizing: none;
     border-radius:300%;
     margin: 10px;
@@ -288,7 +323,7 @@
   width: 400px;
   height: 93px;
   color: rgb(255, 253, 253);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 100;
   font-family:  sans-serif;
   margin-top: 68%;
@@ -333,7 +368,7 @@
   width: 400px;
   height: 93px;
   color: rgb(255, 253, 253);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 100;
   font-family:  sans-serif;
   margin-top: 68%;
@@ -378,7 +413,7 @@
   width: 400px;
   height: 93px;
   color: rgb(255, 253, 253);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 100;
   font-family:  sans-serif;
   margin-top: 68%;
@@ -390,7 +425,7 @@
   position:absolute;
     width: 50px;
     height:60px;
-    background:  #fedd5a69;
+    background:  #fedd5a30;
     box-sizing: none;
     border-radius:300%;
     margin: 10px;
@@ -423,7 +458,7 @@
   width: 400px;
   height: 93px;
   color: rgb(255, 253, 253);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 100;
   font-family:  sans-serif;
   margin-top: 108%;
@@ -435,7 +470,7 @@
   position:absolute;
     width: 50px;
     height:60px;
-    background: #5454d478;
+    background: #5454d452;
     box-sizing: none;
     border-radius:300%;
     margin: 10px;
@@ -467,7 +502,7 @@
   width: 200px;
   height: 93px;
   color: rgb(255, 253, 253);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 100;
   font-family:  sans-serif;
   margin-top:108%;
@@ -479,7 +514,7 @@
   position:absolute;
     width: 50px;
     height:60px;
-    background: #f0403758;
+    background:  #f0403724;
     box-sizing: none;
     border-radius:300%;
     margin: 10px;
@@ -512,7 +547,7 @@
   width: 200px;
   height: 93px;
   color: rgb(255, 253, 253);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 100;
   font-family:  sans-serif;
   margin-top: 108%;
@@ -685,18 +720,24 @@
              <nav class="navbar">
                 <img src="image/Logo_Icon.png"></a> <h1>ENVER</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">serives</a></li>
                     <li><a href="#">Our_Project</a></li>
-                    <li><a href="#">Contact_us</a></li>
                  </ul>
              </nav>
+                  <div class="Box1">
+                      <div class="content">
+                        <p>contact us</p>
+                      </div>
+                  </div>
+              </div>             
+             </nav>
               <div class="Box">
+                <img src="image/Vector.png">
                 <div class="content">
-                  <i class="fa fa-circle-thin 1"></i>
-                  <i class="fa fa-circle-thin 2"></i>
                   <div class="rounded-Box1"></div>
-                  <div class="rounded-Box2"></div>
+                  <div class="rounded-Box2"><img src="image/image_28.png">
+                  </div>
                     <h1>BuildYour
                         <br>
                         Awesome
@@ -707,14 +748,12 @@
                       such as UI/UX Design to developers,we will provide the best service 
                       for those of you who use our services.
                      </p>
-                     <div class="material-icons">
-                      <i class="material-icons" aria-hidden="true"></i>
-                     </div>  
                 </div>
                 <div class="Box2">
+                  <img src="image/add.png">
                   <div class="content">
                     <p>our service</p>
-                  </div>   
+                  </div>  
                 </div>
                 <div class="Box3">
                   <div class="content1">
@@ -733,7 +772,7 @@
                 </div>
                 <div class="shadow"></div>
                 <div class="content3">
-                  <h1>The Service We Provide 
+                  <img src="image/Vector.png"> <h1>The Service We Provide 
                     <br>For You</h1>
                 </div>
                 <div class="content4">
